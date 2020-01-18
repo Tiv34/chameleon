@@ -66,7 +66,7 @@ AppAsset::register($this);
         <div class="info-supre">
             <h1>Управление информационными технологиями</h1>
             <p class="lead">Ваши возможности. Наша страсть.</p>
-            <p><a class="btn btn-lg btn-success send_info" href="">Связаться</a></p>
+            <p><a class="btn btn-lg send_info" href="">Связаться</a></p>
         </div>
     </div>
 

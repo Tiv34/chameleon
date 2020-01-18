@@ -5,13 +5,14 @@
 $this->title = 'Главная';
 ?>
 
-<div class="container">
     <div class="row">
         <div class="col-xs-12">
             <div class="section_heading wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-                <p>Мы предлагаем</p>
+<!--                <p>Мы предлагаем</p>-->
                 <h3>Наши <span>Услуги</span></h3>
                 <div class="line_perfct"></div>
+            </div>
+        </div>
     </div>
     <div class="row">
         <div class="col-sm-6 col-md-4">
@@ -114,44 +115,53 @@ $this->title = 'Главная';
             </div>
         </div>
     </div>
-</div>
 
+            <div class="like_client">
+                <div class="row icon_center">
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="cool_fact_text wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                            <img class="icon_info_company" src="/web/images/icons8.png">
+                            <h3><span class="counter">8</span></h3>
+                            <h5>Многолетний опыт</h5>
+                        </div>
+                    </div>
 
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="cool_fact_text wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+                            <img class="icon_info_company" src="/web/images/icons9.png">
+                            <h3><span class="counter">50</span>+</h3>
+                            <h5>Счастливых клиентов</h5>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="cool_fact_text wow fadeInUp" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
+                            <img class="icon_info_company" src="/web/images/icons10.png">
+                            <h3><span class="counter">100</span>+</h3>
+                            <h5>Запущенных проектов</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<div class="info_company_block">
+<div class="row">
 <div class="site-index">
     <div class="body-content">
-
         <div class="row">
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/forum/">Yii Forum &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
+            <div class="col-md-12 wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                <div class="section_heading wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                    <h3>Комплексные услуги</h3>
+                    <div class="line_perfct"></div>
+                </div>
+                <div class="special_area_text">
+                    <p>«Ваш бэк-офис — фронт-офис другой компании. Не организуйте столовую своими силами — пусть это сделает подрядчик. Не печатайте материалы сами — поручите это типографии. Нужно понимать, где вы создаете реальную добавленную стоимость, и направлять туда своих лучших людей и ресурсы. Вспомогательные функции по определению не смогут привлечь ваших лучших людей. Мы поручили эти функции специализированным компаниям, которые поручили их выполнение своим лучшим сотрудникам. Эта практика много раз себя оправдывала. Именно в этом суть аутсорсинга.»</p>
+                    <p>Джек Уэлч, CEO General Electric.</p>
+                    <p>Мы создаем решения, руководствуясь многолетним нашим опытом в сфере ИТ, с учетом конкретных технологических и эксплуатационных требований наших клиентов. Каждый бизнес уникален, и наши сотрудники всегда учитывают это при разработке решений.</p>
+                </div>
             </div>
         </div>
-
     </div>
+</div>
+</div>
 </div>
