@@ -1,0 +1,22 @@
+.background {
+    position: absolute;
+    display: block;
+    height: 400px;
+    margin: 0 0 10px 0;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    background: linear-gradient(rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)),
+    url('../images/welcome-bg.jpg'),
+    center;
+    /*background-image: url("../images/welcome-bg.jpg");*/
+    /*background-position: center;*/
+    background-size: cover;
+}
+.line_perfct{
+    width: 30%;
+    height: 5px;
+    background: #ff9800;
+    margin: auto;
+}

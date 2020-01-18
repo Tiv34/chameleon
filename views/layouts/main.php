@@ -30,7 +30,6 @@ AppAsset::register($this);
     <?php
     NavBar::begin([
         'brandLabel' => Html::img('@web/images/logo.png', ['alt'=>Yii::$app->name, 'class'=>'brand-img']),
-//        'brandOptions' => ['class' => 'brand-img'],
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'navbar-inverse navbar-fixed-top',
@@ -61,6 +60,16 @@ AppAsset::register($this);
     ]);
     NavBar::end();
     ?>
+
+    <div class="jumbotron">
+        <canvas class="background"></canvas>
+        <div class="info-supre">
+            <h1>Управление информационными технологиями</h1>
+            <p class="lead">Ваши возможности. Наша страсть.</p>
+            <p><a class="btn btn-lg btn-success send_info" href="">Связаться</a></p>
+        </div>
+    </div>
+
         <div class="container">
             <?= Breadcrumbs::widget([
                 'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
@@ -69,8 +78,6 @@ AppAsset::register($this);
             <?= $content ?>
         </div>
 </div>
-
-
 
 <footer class="footer">
     <div class="container">
