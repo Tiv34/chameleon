@@ -39,11 +39,13 @@ AppAsset::register($this);
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
             ['label' => 'Главная', 'url' => ['/site/index']],
-            ['label' => '1С Программы и сервисы', 'url' => ['/site/about']],
-            ['label' => 'ИТ Аутсорсинг', 'url' => ['/site/contact']],
+            ['label' => '1С Программы и сервисы', 'items' => [
+                    ['label' => '1С Программы', 'url' => ['/site/service1c']],
+                    ['label' => '1С Отчётность', 'url' => ['/site/service1c']],
+                ]],
+            ['label' => 'ИТ Аутсорсинг', 'url' => ['/site/outsourcing']],
             ['label' => 'Блог', 'url' => ['/site/contact']],
             ['label' => 'О нас', 'url' => ['/site/about']],
-//            ['label' => 'Contact', 'url' => ['/site/about']],
             Yii::$app->user->isGuest ? (
                 ['label' => 'Login', 'url' => ['/site/login']]
             ) : (
@@ -81,9 +83,7 @@ AppAsset::register($this);
 
 <footer class="footer">
     <div class="container">
-        <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
-
-        <p class="pull-right"><?= Yii::powered() ?></p>
+        <p class="pull-left">&copy; ITP_LAB <?= date('Y') ?></p>
     </div>
 </footer>
 

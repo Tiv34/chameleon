@@ -2,6 +2,14 @@
 
 /* @var $this yii\web\View */
 
+/* @var $this yii\web\View */
+/* @var $form yii\bootstrap\ActiveForm */
+/* @var $model app\models\ContactForm */
+
+use yii\helpers\Html;
+use yii\bootstrap\ActiveForm;
+use yii\captcha\Captcha;
+
 $this->title = 'Главная';
 ?>
 
@@ -9,7 +17,7 @@ $this->title = 'Главная';
         <div class="col-xs-12">
             <div class="section_heading wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
 <!--                <p>Мы предлагаем</p>-->
-                <h3>Наши <span>Услуги</span></h3>
+                <h1>Наши <span>Услуги</span></h1>
                 <div class="line_perfct"></div>
             </div>
         </div>
@@ -151,7 +159,7 @@ $this->title = 'Главная';
         <div class="row">
             <div class="col-md-12 wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
                 <div class="section_heading wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-                    <h3>Комплексные услуги</h3>
+                    <h1>Комплексные услуги</h1>
                     <div class="line_perfct"></div>
                 </div>
                 <div class="special_area_text">
@@ -164,4 +172,45 @@ $this->title = 'Главная';
     </div>
 </div>
 </div>
+</div>
+
+<div class="site-contact">
+    <div class="section_heading wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+        <h1>Связаться с нами</h1>
+        <div class="line_perfct"></div>
+    </div>
+
+    <?php if (Yii::$app->session->hasFlash('contactFormSubmitted')): ?>
+        <div class="alert alert-success">
+            Благодарим Вас за обращение к нам. Мы ответим вам как можно скорее.
+        </div>
+    <?php else: ?>
+        <div class="contact_form_info">
+            <?php $form = ActiveForm::begin(['id' => 'contact-form']); ?>
+            <div class="row">
+                <div class="col-sm-6 col-md-6">
+                    <?= $form->field($model, 'name')?>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                    <?= $form->field($model, 'email') ?>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6 col-md-6">
+                    <?= $form->field($model, 'phone') ?>
+                    <?= $form->field($model, 'verifyCode')->widget(Captcha::className(), [
+                        'template' => '<div class="row"><div class="col-lg-3">{image}</div><div class="col-lg-6">{input}</div></div>',
+                    ]) ?>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                    <?= $form->field($model, 'body')->textarea(['rows' => 5]) ?>
+                </div>
+            </div>
+            <div class="form-group contact_center">
+                <?= Html::submitButton('Связаться', ['class' => 'btn btn-lg send_info', 'name' => 'contact-button']) ?>
+            </div>
+            <?php ActiveForm::end(); ?>
+        </div>
+    <?php endif; ?>
 </div>

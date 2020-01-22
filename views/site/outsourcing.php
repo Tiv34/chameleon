@@ -4,13 +4,13 @@
 
 use yii\helpers\Html;
 
-$this->title = 'О нас';
+$this->title = 'ИТ Аутсорсинг';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="site-about">
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-     Пока пусто
+        Пока пусто
     </p>
 </div>
