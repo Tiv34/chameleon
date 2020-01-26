@@ -11,6 +11,16 @@ use yii\bootstrap\ActiveForm;
 use yii\captcha\Captcha;
 
 $this->title = 'Главная';
+if($color1){
+    $this->registerCssFile('/web/css/background1.css');
+} elseif($color2) {
+    $this->registerCssFile('/web/css/background2.css');
+} elseif($color3) {
+    $this->registerCssFile('/web/css/background3.css');
+}   else{
+    $this->registerCssFile('/web/css/background.css');
+}
+
 ?>
 
     <div class="row">

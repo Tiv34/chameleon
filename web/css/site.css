@@ -93,8 +93,8 @@ a.desc:after {
     border-width: 0;
 }
 .brand-img {
-    width: 160px;
-    height: 60px;
+    width: 171px;
+    height: 57px;
     /*transform: rotate(90deg);*/
 }
 .navbar-brand {
@@ -107,6 +107,7 @@ a.desc:after {
     z-index: 2;
     position: relative;
     padding: 100px;
+    color: #ffffff;
 }
 .single_service {
     padding: 32px;
@@ -148,4 +149,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 .contact_center {
     margin: 10px 481px
+}
+.contact_info_phone{
+    float: right;
+    color: #ffffff;
+    padding-top: 5px;
+    margin: 0 0 0 30px;
 }

@@ -29,20 +29,25 @@ AppAsset::register($this);
 <div class="wrap">
     <?php
     NavBar::begin([
-        'brandLabel' => Html::img('@web/images/logo.png', ['alt'=>Yii::$app->name, 'class'=>'brand-img']),
+        'brandLabel' => Html::img('@web/images/logo_v20.png', ['alt'=>Yii::$app->name, 'class'=>'brand-img']),
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'navbar-inverse navbar-fixed-top',
         ],
     ]);
+    echo '<div class="contact_info_phone"> + 7 499 550 34 74 <br> info@itp-lab.ru</div>';
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
             ['label' => 'Главная', 'url' => ['/site/index']],
+            ['label' => 'Торговое оборудование', 'url' => ['/site/color1']],
             ['label' => '1С Программы и сервисы', 'items' => [
                     ['label' => '1С Программы', 'url' => ['/site/service1c']],
                     ['label' => '1С Отчётность', 'url' => ['/site/service1c']],
-                ]],
+//                    ['label' => 'Цвет 1', 'url' => ['/site/color1']],
+//                    ['label' => 'Цвет 2', 'url' => ['/site/color2']],
+//                    ['label' => 'Цвет 3', 'url' => ['/site/color3']],
+            ]],
             ['label' => 'ИТ Аутсорсинг', 'url' => ['/site/outsourcing']],
             ['label' => 'Блог', 'url' => ['/site/contact']],
             ['label' => 'О нас', 'url' => ['/site/about']],
@@ -57,7 +62,7 @@ AppAsset::register($this);
                 )
                 . Html::endForm()
                 . '</li>'
-            )
+            ),
         ],
     ]);
     NavBar::end();

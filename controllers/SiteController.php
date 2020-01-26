@@ -144,4 +144,40 @@ class SiteController extends Controller
     {
         return $this->render('outsourcing');
     }
+    public function actionColor1()
+    {
+        $model = new ContactForm();
+        if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['adminEmail'])) {
+            Yii::$app->session->setFlash('contactFormSubmitted');
+            return $this->refresh();
+        }
+        return $this->render('index', [
+            'model' => $model,
+            'color1' => true
+        ]);
+    }
+    public function actionColor2()
+    {
+        $model = new ContactForm();
+        if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['adminEmail'])) {
+            Yii::$app->session->setFlash('contactFormSubmitted');
+            return $this->refresh();
+        }
+        return $this->render('index', [
+            'model' => $model,
+            'color2' => true
+        ]);
+    }
+    public function actionColor3()
+    {
+        $model = new ContactForm();
+        if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['adminEmail'])) {
+            Yii::$app->session->setFlash('contactFormSubmitted');
+            return $this->refresh();
+        }
+        return $this->render('index', [
+            'model' => $model,
+            'color3' => true
+        ]);
+    }
 }
