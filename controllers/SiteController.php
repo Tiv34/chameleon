@@ -153,7 +153,6 @@ class SiteController extends Controller
         }
         return $this->render('index', [
             'model' => $model,
-            'color1' => true
         ]);
     }
     public function actionColor2()
@@ -165,7 +164,6 @@ class SiteController extends Controller
         }
         return $this->render('index', [
             'model' => $model,
-            'color2' => true
         ]);
     }
     public function actionColor3()
@@ -177,7 +175,6 @@ class SiteController extends Controller
         }
         return $this->render('index', [
             'model' => $model,
-            'color3' => true
         ]);
     }
 }
