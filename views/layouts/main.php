@@ -150,8 +150,8 @@ $this->registerCssFile('/web/css/background.css');
                 </div>
             </div>
             <!-- Contact info Area End -->
-            <div class="col-xs-12 col-sm-6 col-md-3">
-                <iframe src="https://yandex.ru/map-widget/v1/-/CKErbEOi" width="460" height="300" frameborder="1" allowfullscreen="true"></iframe>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <iframe src="https://yandex.ru/map-widget/v1/-/CKErbEOi" class="map_yy" frameborder="1" allowfullscreen="true"></iframe>
             </div>
         </div>
         <p class="pull-left">&copy; ITP_LAB <?= date('Y') ?></p>
