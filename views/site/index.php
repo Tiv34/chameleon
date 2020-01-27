@@ -13,6 +13,14 @@ use yii\captcha\Captcha;
 
 $this->title = 'Главная';
 ?>
+<div class="jumbotron">
+    <canvas class="background"></canvas>
+    <div class="info-supre">
+        <h1>Управление информационными технологиями</h1>
+        <p class="lead">Ваши возможности. Наша страсть.</p>
+        <p><a class="btn btn-lg send_info" href="">Связаться</a></p>
+    </div>
+</div>
 
 <div class="container">
     <div class="row">
