@@ -21,10 +21,10 @@
 .like_client {
     background: #ff9800;
     width: 100%;
-    position: absolute;
+    /*position: absolute;*/
     left: 0;
     color: #ffffff;
-    height: 300px;
+    /*height: 300px;*/
     padding: 20px;
     margin: auto;
 }
@@ -109,4 +109,14 @@
 }
 .contact_href{
     color: #ffffff;
+}
+.navbar-toggle{
+    margin-right: 30px!important;
+    margin-top: 15px!important;
+}
+.row {
+    margin-right: -15px!important;
+}
+.special_area_text{
+    padding: 0 20px;
 }

@@ -74,13 +74,11 @@ $this->registerCssFile('/web/css/background.css');
         </div>
     </div>
 
-        <div class="container">
             <?= Breadcrumbs::widget([
                 'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
             ]) ?>
             <?= Alert::widget() ?>
             <?= $content ?>
-        </div>
 </div>
 
 <footer class="footer">

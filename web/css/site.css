@@ -77,6 +77,9 @@ a.desc:after {
         width: 100%;
         padding: 10px 15px;
     }
+    .block_padding_on{
+        padding-right:0;
+    }
 }
 
 .nav > li > form > button.logout:focus,
@@ -95,6 +98,7 @@ a.desc:after {
 .brand-img {
     width: 171px;
     height: 57px;
+    margin-left: 10px;
     /*transform: rotate(90deg);*/
 }
 .navbar-brand {
@@ -145,14 +149,20 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 .info_company_block{
-    margin: 320px 0 0 0;
+    /*margin: 320px 0 0 0;*/
 }
 .contact_center {
-    margin: 10px 481px
+    margin: 10px 45%;
 }
 .contact_info_phone{
     float: right;
     color: #ffffff;
     padding-top: 5px;
     margin: 0 0 0 30px;
+}
+.navbar-header{
+    min-height: 63px!important;
+}
+.complecs_service{
+    margin-top: 20px;
 }
