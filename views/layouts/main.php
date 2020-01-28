@@ -70,7 +70,7 @@ $this->registerCssFile('/web/css/background.css');
             ['label' => 'Главная', 'url' => ['/site/index']],
             ['label' => '1С Программы и сервисы', 'items' => [
                     ['label' => '1С Программы', 'url' => ['/site/service1c']],
-                    ['label' => '1С Отчётность', 'url' => ['/site/service1c']],
+                    ['label' => '1С Отчётность', 'url' => ['/site/color2']],
             ]],
             ['label' => 'ИТ Аутсорсинг', 'url' => ['/site/outsourcing']],
             ['label' => 'Торговое оборудование', 'url' => ['/site/color1']],
@@ -92,10 +92,10 @@ $this->registerCssFile('/web/css/background.css');
     ]);
     NavBar::end();
     ?>
-            <?= Breadcrumbs::widget([
-                'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-            ]) ?>
-            <?= Alert::widget() ?>
+<!--            --><?//= Breadcrumbs::widget([
+//                'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
+//            ]) ?>
+<!--            --><?//= Alert::widget() ?>
             <?= $content ?>
 </div>
 

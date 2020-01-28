@@ -8,12 +8,14 @@ use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 use yii\captcha\Captcha;
 
-$this->title = 'Contact';
+$this->title = 'Блог';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<!--<div class="site-contact">-->
-<!--    <h1>--><?//= Html::encode($this->title) ?><!--</h1>-->
-<!---->
+<div class="container container_conntent">
+<div class="site-contact">
+    <h1><?= Html::encode($this->title) ?></h1>
+    <img src="../../web/images/waituserCMS.jpg" width="100%" height="100%"/>
+    <!---->
 <!--    --><?php //if (Yii::$app->session->hasFlash('contactFormSubmitted')): ?>
 <!---->
 <!--        <div class="alert alert-success">-->
@@ -65,4 +67,5 @@ $this->params['breadcrumbs'][] = $this->title;
 <!--        </div>-->
 <!---->
 <!--    --><?php //endif; ?>
-<!--</div>-->
+</div>
+</div>
