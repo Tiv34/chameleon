@@ -182,3 +182,32 @@ h1, h2, h3, h4, h5, h6 {
 .container_conntent{
     margin-top: 90px;
 }
+.review_img{
+    width: 200px;
+    margin: auto;
+}
+.reply-item__logo{
+    width: 190px;
+    height: 85px;
+    margin: auto;
+}
+.osnov_review{
+    padding: 30px;
+    margin: 0 5px;
+    background: #f5f5f5;
+    border-radius: 37px;
+    -webkit-transition: all 0.3s ease;;
+    -moz-transition: all 0.3s ease;;
+    -o-transition: all 0.3s ease;;
+    transition: all 0.3s ease;
+}
+.reply-item__reply-text {
+    margin-bottom: 5px;
+    height: 105px;
+}
+.marg_top_cont{
+    margin-top: 10px;
+}
+.osnov_review:hover {
+    box-shadow: inset 0 0 0 23px rgba(211, 195, 175, 0.72);
+}

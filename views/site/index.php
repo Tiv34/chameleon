@@ -13,12 +13,15 @@ use yii\captcha\Captcha;
 
 $this->title = 'Главная';
 ?>
+<link rel="stylesheet" type="text/css" href="/web/js/slick-1.8.1/slick/slick.css">
+<link rel="stylesheet" type="text/css" href="/web/js/slick-1.8.1/slick/slick-theme.css">
+
 <div class="jumbotron">
     <canvas class="background"></canvas>
     <div class="info-supre">
         <h1>Управление информационными технологиями</h1>
         <p class="lead">Ваши возможности. Наша страсть.</p>
-        <p><a class="btn btn-lg send_info" href="">Связаться</a></p>
+        <p><a class="btn btn-lg send_info" href="#site-contact">Связаться</a></p>
     </div>
 </div>
 
@@ -176,6 +179,126 @@ $this->title = 'Главная';
         </div>
     </div>
 </div>
+
+<div class="container marg_top_cont">
+    <div class="section_heading wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+        <h1>Отзывы</h1>
+        <div class="line_perfct"></div>
+    </div>
+<section class="regular slider">
+    <div>
+        <div class="osnov_review">
+            <img class="reply-item__logo" src="https://werterservice.ru/wp-content/uploads/2017/05/reply-logo__sft-group.png">
+            <span class="reply-item__reply-person">Генеральный директор Петров В.Ю.</span>
+            <span class="reply-item__city">Котляково</span>
+            <div class="reply-item__reply-text"><p>Сотрудники WerterServie проявили себя как специалисты своего дела, умеющие профессионально организовать процесс предоставления услуг клиентам.</p>
+            </div>
+            <a class="reply-item__reply-image" href="https://werterservice.ru/wp-content/uploads/2017/05/reply-image__sft-group.png" target="_blank" tabindex="0">
+                <img src="/web/images/rewies/reply-image__sft-group.png" class="review_img">
+            </a>
+        </div>
+    </div>
+    <div>
+        <div class="osnov_review">
+            <img class="reply-item__logo" src="https://werterservice.ru/wp-content/uploads/2017/05/logo_since.jpg">
+            <span class="reply-item__reply-person">Главный бухгалтер Сушко А.В.</span>
+            <span class="reply-item__city">Центр развития ребёнка</span>
+            <div class="reply-item__reply-text"><p>Профессионализм и высокое качество работы сотрудников компании заслуживает самой высокой оценки. Благодарим за профессиональный подход и внимание ко всем нашим требованиям! </p>
+            </div>
+            <a class="reply-item__reply-image" href="https://werterservice.ru/wp-content/uploads/2017/05/-e1498570192570.png" target="_blank" tabindex="0">
+                <img src="/web/images/rewies/-e1498570192570.png" class="review_img">
+            </a>
+        </div>
+    </div>
+    <div>
+        <div class="osnov_review">
+            <img class="reply-item__logo" src="https://werterservice.ru/wp-content/uploads/2017/05/reply-logo__bonne.png">
+            <span class="reply-item__reply-person">Заместитель главного бухгалтера Кокорева А.Д.</span>
+            <span class="reply-item__city">ООО "Бонн Интернейшенл"</span>
+            <div class="reply-item__reply-text"><p>ООО "Бонн Интернейшенл" не один год сотрудничает с командой WerterService. Хотим выразить благодарность за высокий профессионализм, отличное качество и оперативность.</p>
+            </div>
+            <a class="reply-item__reply-image" href="https://werterservice.ru/wp-content/uploads/2017/05/reply-image__bonne.png" target="_blank" tabindex="0">
+                <img src="/web/images/rewies/reply-image__bonne.png" class="review_img">
+            </a>
+        </div>
+    </div>
+    <div>
+        <div class="osnov_review">
+            <img class="reply-item__logo" src="https://werterservice.ru/wp-content/uploads/2017/05/reply-logo__ils.png">
+            <span class="reply-item__reply-person">Главный бухгалтер Малыгина Л.Л.</span>
+            <span class="reply-item__city">Международная лингвистическая школа</span>
+            <div class="reply-item__reply-text"><p>Выражает благодарность команде специалистов Werter Service за предоставленные высоком профессиональном уровне ИТ-услуги.</p>
+            </div>
+            <a class="reply-item__reply-image" href="https://werterservice.ru/wp-content/uploads/2017/05/reply-image__ils.png" target="_blank" tabindex="0">
+                <img src="/web/images/rewies/reply-image__ils.png" class="review_img">
+            </a>
+        </div>
+    </div>
+</section>
+</div>
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="/web/js/slick-1.8.1/slick/slick.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+    $(document).on('ready', function() {
+        $(".vertical-center-4").slick({
+            dots: true,
+            vertical: true,
+            centerMode: true,
+            slidesToShow: 4,
+            slidesToScroll: 2
+        });
+        $(".vertical-center-3").slick({
+            dots: true,
+            vertical: true,
+            centerMode: true,
+            slidesToShow: 3,
+            slidesToScroll: 3
+        });
+        $(".vertical-center-2").slick({
+            dots: true,
+            vertical: true,
+            centerMode: true,
+            slidesToShow: 2,
+            slidesToScroll: 2
+        });
+        $(".vertical-center").slick({
+            dots: true,
+            vertical: true,
+            centerMode: true,
+        });
+        $(".vertical").slick({
+            dots: true,
+            vertical: true,
+            slidesToShow: 3,
+            slidesToScroll: 3
+        });
+        $(".regular").slick({
+            dots: true,
+            infinite: true,
+            slidesToShow: 2,
+            slidesToScroll: 2
+        });
+        $(".center").slick({
+            dots: true,
+            infinite: true,
+            centerMode: true,
+            slidesToShow: 5,
+            slidesToScroll: 3
+        });
+        $(".variable").slick({
+            dots: true,
+            infinite: true,
+            variableWidth: true
+        });
+        $(".lazy").slick({
+            lazyLoad: 'ondemand', // ondemand progressive anticipated
+            infinite: true
+        });
+    });
+</script>
+
+
+
 <div class="container">
     <div class="row complecs_service">
         <div class="col-md-12 wow fadeInUp" data-wow-delay="0.2s"
@@ -199,7 +322,7 @@ $this->title = 'Главная';
         </div>
     </div>
 
-    <div class="site-contact">
+    <div class="site-contact" id="site-contact">
         <div class="section_heading wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
             <h1>Связаться с нами</h1>
             <div class="line_perfct"></div>

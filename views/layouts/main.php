@@ -113,36 +113,13 @@ $this->registerCssFile('/web/css/background.css');
                         <a href="https://facebook.ru/"><i class="fa fa-facebook" aria-hidden="true"></i></a><a href="https://twitter.ru/"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                     </div>
                 </div>
+
+                <div class="footer_about_us wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; margin-top: 35px; animation-delay: 0.2s; animation-name: fadeInUp;">
+                    <a target="_blank" class="contact_href" href="/web/files/COMREQ-40802810900000065876-2017-04-17.pdf">Реквизиты</a>
+                </div>
             </div>
-            <!-- Footer About Area End -->
 
-            <!-- latest news Area Start -->
-<!--            <div class="col-xs-12 col-sm-6 col-md-3">-->
-<!--                <div class="footer_upcoming_event wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">-->
-<!--                    <div class="title">-->
-<!--                        <h4>Блог</h4>-->
-<!--                    </div>-->
-<!---->
-<!---->
-                    <!-- Single latest post -->
-<!--                    <div class="event_single_post">-->
-<!--                        <img src="assets/cache/images/545632-634x375-a53.jpg" alt="">-->
-<!--                        <a href="/blog/kopiya-statya-1.html">-->
-<!--                            <p>Копия Статья 1</p>-->
-<!--                        </a>-->
-<!--                    </div>-->
-                    <!-- Single latest post -->
-<!--                    <div class="event_single_post">-->
-<!--                        <img src="assets/cache/images/545632-634x375-a53.jpg" alt="">-->
-<!--                        <a href="/blog/statya-1.html">-->
-<!--                            <p>Статья 1</p>-->
-<!--                        </a>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-            <!-- latest news Area End -->
 
-            <!-- Contact info Area Start -->
             <div class="col-xs-12 col-sm-6 col-md-3">
                 <div class="footer_contact_info wow fadeInUp" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
                     <div class="title">
@@ -175,6 +152,24 @@ $this->registerCssFile('/web/css/background.css');
         <p class="pull-left">&copy; ITP_LAB <?= date('Y') ?></p>
     </div>
 </footer>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(57256903, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+    });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/57256903" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
 
 <?php $this->endBody() ?>
 </body>
