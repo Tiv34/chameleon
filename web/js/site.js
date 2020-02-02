@@ -9,12 +9,12 @@ window.onload = function() {
             {
                 breakpoint: 768,
                 options: {
-                    maxParticles: 80
+                    maxParticles: 30
                 }
             }, {
                 breakpoint: 375,
                 options: {
-                    maxParticles: 50
+                    maxParticles: 20
                 }
             }
         ]
