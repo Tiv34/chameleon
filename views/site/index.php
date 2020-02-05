@@ -193,9 +193,9 @@ $this->title = 'Главная';
             <span class="reply-item__city">Котляково</span>
             <div class="reply-item__reply-text"><p>Сотрудники WerterServie проявили себя как специалисты своего дела, умеющие профессионально организовать процесс предоставления услуг клиентам.</p>
             </div>
-            <a class="reply-item__reply-image" href="https://werterservice.ru/wp-content/uploads/2017/05/reply-image__sft-group.png" target="_blank" tabindex="0">
-                <img src="/web/images/rewies/reply-image__sft-group.png" class="review_img">
-            </a>
+<!--            <a class="reply-item__reply-image" href="https://werterservice.ru/wp-content/uploads/2017/05/reply-image__sft-group.png" target="_blank" tabindex="0">-->
+<!--                <img src="/web/images/rewies/reply-image__sft-group.png" class="review_img">-->
+<!--            </a>-->
         </div>
     </div>
     <div>
@@ -205,9 +205,9 @@ $this->title = 'Главная';
             <span class="reply-item__city">Центр развития ребёнка</span>
             <div class="reply-item__reply-text"><p>Профессионализм и высокое качество работы сотрудников компании заслуживает самой высокой оценки. Благодарим за профессиональный подход и внимание ко всем нашим требованиям! </p>
             </div>
-            <a class="reply-item__reply-image" href="https://werterservice.ru/wp-content/uploads/2017/05/-e1498570192570.png" target="_blank" tabindex="0">
-                <img src="/web/images/rewies/-e1498570192570.png" class="review_img">
-            </a>
+<!--            <a class="reply-item__reply-image" href="https://werterservice.ru/wp-content/uploads/2017/05/-e1498570192570.png" target="_blank" tabindex="0">-->
+<!--                <img src="/web/images/rewies/-e1498570192570.png" class="review_img">-->
+<!--            </a>-->
         </div>
     </div>
     <div>
@@ -217,9 +217,9 @@ $this->title = 'Главная';
             <span class="reply-item__city">ООО "Бонн Интернейшенл"</span>
             <div class="reply-item__reply-text"><p>ООО "Бонн Интернейшенл" не один год сотрудничает с командой WerterService. Хотим выразить благодарность за высокий профессионализм, отличное качество и оперативность.</p>
             </div>
-            <a class="reply-item__reply-image" href="https://werterservice.ru/wp-content/uploads/2017/05/reply-image__bonne.png" target="_blank" tabindex="0">
-                <img src="/web/images/rewies/reply-image__bonne.png" class="review_img">
-            </a>
+<!--            <a class="reply-item__reply-image" href="https://werterservice.ru/wp-content/uploads/2017/05/reply-image__bonne.png" target="_blank" tabindex="0">-->
+<!--                <img src="/web/images/rewies/reply-image__bonne.png" class="review_img">-->
+<!--            </a>-->
         </div>
     </div>
     <div>
@@ -229,9 +229,9 @@ $this->title = 'Главная';
             <span class="reply-item__city">Международная лингвистическая школа</span>
             <div class="reply-item__reply-text"><p>Выражает благодарность команде специалистов Werter Service за предоставленные высоком профессиональном уровне ИТ-услуги.</p>
             </div>
-            <a class="reply-item__reply-image" href="https://werterservice.ru/wp-content/uploads/2017/05/reply-image__ils.png" target="_blank" tabindex="0">
-                <img src="/web/images/rewies/reply-image__ils.png" class="review_img">
-            </a>
+<!--            <a class="reply-item__reply-image" href="https://werterservice.ru/wp-content/uploads/2017/05/reply-image__ils.png" target="_blank" tabindex="0">-->
+<!--                <img src="/web/images/rewies/reply-image__ils.png" class="review_img">-->
+<!--            </a>-->
         </div>
     </div>
 </section>
