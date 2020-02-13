@@ -36,8 +36,8 @@ $this->registerCssFile('/web/css/background.css');
     $(function(){
         $('.preloader_bg, .preloader_content').fadeIn(0);
         $(window).on("load", function() {
-            $('.preloader_bg').delay(1000).fadeOut(1500);
-            $('.preloader_content').delay(1000).fadeOut(300);
+            $('.preloader_bg').delay(800).fadeOut(1000);
+            $('.preloader_content').delay(800).fadeOut(200);
         });
     });
 </script>
