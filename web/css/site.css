@@ -119,7 +119,7 @@ a.desc:after {
 .info-supre{
     z-index: 2;
     position: relative;
-    padding: 100px;
+    padding: 100px 0;
     color: #ffffff;
 }
 .single_service {
