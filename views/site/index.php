@@ -266,23 +266,11 @@ $this->title = 'Главная';
                 <div class="row">
                     <div class="col-sm-6 col-md-6">
                         <?= $form->field($model, 'name') ?>
-                    </div>
-                    <div class="col-sm-6 col-md-6">
+                        <?= $form->field($model, 'phone') ?>
                         <?= $form->field($model, 'email') ?>
                     </div>
-                </div>
-
-                <div class="row">
                     <div class="col-sm-6 col-md-6">
-                        <?= $form->field($model, 'phone') ?>
-<!--                        --><?//= $form->field($model, 'verifyCode')->widget(Captcha::className(), [
-//                            'template' => '<div class="row"><div class="col-lg-3">{image}</div><div class="col-lg-6">{input}</div></div>',
-//                        ]) ?>
-                        <?= \Himiklab\yii2\recaptcha\ReCaptcha::widget (['name' => 'reCaptcha']) ?>
-
-                    </div>
-                    <div class="col-sm-6 col-md-6">
-                        <?= $form->field($model, 'body')->textarea(['rows' => 5]) ?>
+                        <?= $form->field($model, 'body')->textarea(['rows' => 9]) ?>
                     </div>
                 </div>
                 <div class="form-group contact_center">
