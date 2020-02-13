@@ -52,6 +52,13 @@ $config = [
             ],
         ],
 
+        'reCaptcha' => [
+            'name' => 'reCaptcha',
+            'class' => 'himiklab\yii2\recaptcha\ReCaptcha',
+            'siteKey' => '6LeTnNgUAAAAANGg28NNr51s7B5FKxyC__GGY4ZO',
+            'secret' => '6LeTnNgUAAAAAPbWiprEyfdZAbikTAvg1y2nCcGz',
+        ],
+
     ],
     'language'=>'ru',
     'params' => $params,

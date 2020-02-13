@@ -15,6 +15,7 @@ class ContactForm extends Model
     public $phone;
     public $body;
     public $verifyCode;
+    public $reCaptcha;
 
 
     /**
@@ -25,10 +26,11 @@ class ContactForm extends Model
         return [
             // name, email, subject and body are required
             [['email'], 'required'],
+            [['reCaptcha'], \himiklab\yii2\recaptcha\ReCaptchaValidator::className(), 'secret' => 'Секретный ключ', 'uncheckedMessage' => 'Please confirm that you are not a bot.'],
             // email has to be a valid email address
             ['email', 'email'],
             // verifyCode needs to be entered correctly
-            ['verifyCode', 'captcha'],
+//            ['verifyCode', 'captcha'],
         ];
     }
 
@@ -42,7 +44,7 @@ class ContactForm extends Model
             'email' => 'Электронный адрес',
             'phone' => 'Телефон',
             'body' => 'Сообщение',
-            'verifyCode' => '',
+//            'verifyCode' => '',
         ];
     }
 

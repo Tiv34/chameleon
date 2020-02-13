@@ -10,7 +10,6 @@
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 use yii\captcha\Captcha;
-
 $this->title = 'Главная';
 ?>
 <script src="/web/js/slick-1.8.1/slick/slick.min.js" type="text/javascript" charset="utf-8"></script>
@@ -276,9 +275,11 @@ $this->title = 'Главная';
                 <div class="row">
                     <div class="col-sm-6 col-md-6">
                         <?= $form->field($model, 'phone') ?>
-                        <?= $form->field($model, 'verifyCode')->widget(Captcha::className(), [
-                            'template' => '<div class="row"><div class="col-lg-3">{image}</div><div class="col-lg-6">{input}</div></div>',
-                        ]) ?>
+<!--                        --><?//= $form->field($model, 'verifyCode')->widget(Captcha::className(), [
+//                            'template' => '<div class="row"><div class="col-lg-3">{image}</div><div class="col-lg-6">{input}</div></div>',
+//                        ]) ?>
+                        <?= \Himiklab\yii2\recaptcha\ReCaptcha::widget (['name' => 'reCaptcha']) ?>
+
                     </div>
                     <div class="col-sm-6 col-md-6">
                         <?= $form->field($model, 'body')->textarea(['rows' => 5]) ?>
