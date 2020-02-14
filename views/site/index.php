@@ -208,19 +208,19 @@ $this->title = 'Главная';
     </div>
     <div>
         <div class="osnov_review">
-            <img class="reply-item__logo" src="https://werterservice.ru/wp-content/uploads/2017/05/reply-logo__bonne.png">
-            <span class="reply-item__reply-person">Заместитель главного бухгалтера Кокорева А.Д.</span>
-            <span class="reply-item__city">ООО "Бонн Интернейшенл"</span>
-            <div class="reply-item__reply-text"><p>ООО "Бонн Интернейшенл" не один год сотрудничает с командой WerterService. Хотим выразить благодарность за высокий профессионализм, отличное качество и оперативность.</p>
+            <img class="reply-item__logo" src="https://werterservice.ru/wp-content/uploads/2017/05/reply-logo__ils.png">
+            <span class="reply-item__reply-person">Главный бухгалтер Малыгина Л.Л.</span>
+            <span class="reply-item__city">Международная лингвистическая школа</span>
+            <div class="reply-item__reply-text"><p>Выражает благодарность команде специалистов Werter Service за предоставленные высоком профессиональном уровне ИТ-услуги.</p>
             </div>
         </div>
     </div>
     <div>
         <div class="osnov_review">
-            <img class="reply-item__logo" src="https://werterservice.ru/wp-content/uploads/2017/05/reply-logo__ils.png">
-            <span class="reply-item__reply-person">Главный бухгалтер Малыгина Л.Л.</span>
-            <span class="reply-item__city">Международная лингвистическая школа</span>
-            <div class="reply-item__reply-text"><p>Выражает благодарность команде специалистов Werter Service за предоставленные высоком профессиональном уровне ИТ-услуги.</p>
+            <img class="reply-item__logo" src="https://werterservice.ru/wp-content/uploads/2017/05/reply-logo__bonne.png">
+            <span class="reply-item__reply-person">Заместитель главного бухгалтера Кокорева А.Д.</span>
+            <span class="reply-item__city">ООО "Бонн Интернейшенл"</span>
+            <div class="reply-item__reply-text"><p>ООО "Бонн Интернейшенл" не один год сотрудничает с командой WerterService. Хотим выразить благодарность за высокий профессионализм, отличное качество и оперативность.</p>
             </div>
         </div>
     </div>
