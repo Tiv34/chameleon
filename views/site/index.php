@@ -190,10 +190,10 @@ $this->title = 'Главная';
 <section class="regular slider">
     <div>
         <div class="osnov_review">
-            <img class="reply-item__logo" src="https://werterservice.ru/wp-content/uploads/2017/05/reply-logo__sft-group.png">
-            <span class="reply-item__reply-person">Генеральный директор Петров В.Ю.</span>
-            <span class="reply-item__city">Котляково</span>
-            <div class="reply-item__reply-text"><p>Сотрудники WerterServie проявили себя как специалисты своего дела, умеющие профессионально организовать процесс предоставления услуг клиентам.</p>
+            <img class="reply-item__logo" src="https://werterservice.ru/wp-content/uploads/2017/05/reply-logo__bonne.png">
+            <span class="reply-item__reply-person">Заместитель главного бухгалтера Кокорева А.Д.</span>
+            <span class="reply-item__city">ООО "Бонн Интернейшенл"</span>
+            <div class="reply-item__reply-text"><p>ООО "Бонн Интернейшенл" не один год сотрудничает с командой WerterService. Хотим выразить благодарность за высокий профессионализм, отличное качество и оперативность.</p>
             </div>
         </div>
     </div>
