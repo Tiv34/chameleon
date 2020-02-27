@@ -108,7 +108,7 @@ $this->registerCssFile('/web/css/background.css');
                     <div class="title">
                         <h4>О нас</h4>
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut delectus consectetur omnis, alias nulla repudiandae quasi non at ullam, vel officiis unde cum ea.</p>
+                    <p>В компании «ltp-lab» всегда рады общению с клиентами. Свяжитесь с нами. Мы разработаем ИТ-решение, которое решит ваши задачи.</p>
                     <div class="footer_social_area">
                         <a href="https://facebook.ru/"><i class="fa fa-facebook" aria-hidden="true"></i></a><a href="https://twitter.ru/"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                     </div>
@@ -128,7 +128,7 @@ $this->registerCssFile('/web/css/background.css');
                     <!-- single contact info start -->
                     <div class="footer_single_contact_info">
                         <i class="fa fa-globe" aria-hidden="true"></i>
-                        <p>адрес 1</p><p>адрес 2</p><p>адрес 3</p>
+                        <p>127549, Москва, ул Костромская, дом 20</p>
                     </div>
 
                     <!-- single contact info start -->
@@ -146,7 +146,7 @@ $this->registerCssFile('/web/css/background.css');
             </div>
             <!-- Contact info Area End -->
             <div class="col-xs-12 col-sm-6 col-md-4">
-                <iframe src="https://yandex.ru/map-widget/v1/-/CKErbEOi" class="map_yy" frameborder="1" allowfullscreen="true"></iframe>
+                <iframe src="https://yandex.ru/map-widget/v1/-/CKaoFA5C" class="map_yy" frameborder="1" allowfullscreen="true"></iframe>
             </div>
         </div>
         <p class="pull-left">&copy; ITP_LAB <?= date('Y') ?></p>
