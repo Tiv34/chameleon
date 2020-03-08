@@ -26,7 +26,7 @@ $this->title = 'Главная';
         <p><a class="btn btn-lg send_info" href="#site-contact">Связаться</a></p>
     </div>
 </div>
-
+<!--<div class="box" data-scroll-speed="9">L</div>-->
 <div class="container">
     <div class="row">
         <div class="col-xs-12">
@@ -63,23 +63,35 @@ $this->title = 'Главная';
                 </div>
                 <div class="single_service_text">
                     <h4>Администрирование ПО рабочих мест</h4>
-                    <div class="service-box-price">от 500 руб</div>
+                    <p>от 500 руб</p>
                     <div class="service-box-text"><p>Поддержка рабочих мест и пользователей</p></div>
                 </div>
             </div>
         </div>
         <div class="col-sm-6 col-md-4">
-            <div class="single_service show-fanny wow fadeInUp" data-wow-delay="0.2s"
+            <div class="single_service_devops show-fanny wow fadeInUp" data-wow-delay="0.2s"
                  style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
                 <div class="single_service_icon">
                     <img src="/web/images/service-3-orgtech.png">
                 </div>
-                <div class="single_service_text">
+                <div class="single_service_text_devops">
                     <h4>Настройка и поддержка оргтехники (не включая ремонт)</h4>
                     <p>от 500 руб</p>
                 </div>
             </div>
         </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="single_service_devops show-fanny wow fadeInUp" data-wow-delay="0.2s"
+                 style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                <div class="single_service_icon">
+                    <img src="/web/images/development.png" width="64px" height="64">
+                </div>
+                <div class="single_service_text_devops">
+                    <h4>Web-development</h4>
+                </div>
+            </div>
+        </div>
+
         <div class="col-sm-6 col-md-4">
             <div class="single_service show-fanny wow fadeInUp little_block" data-wow-delay="0.2s"
                  style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
@@ -210,7 +222,7 @@ $this->title = 'Главная';
             <img class="reply-item__logo" src="https://werterservice.ru/wp-content/uploads/2017/05/reply-logo__bonne.png">
             <span class="reply-item__reply-person">Заместитель главного бухгалтера Кокорева А.Д.</span>
             <span class="reply-item__city">ООО "Бонн Интернейшенл"</span>
-            <div class="reply-item__reply-text"><p>ООО "Бонн Интернейшенл" не один год сотрудничает с командой WerterService. Хотим выразить благодарность за высокий профессионализм, отличное качество и оперативность.</p>
+            <div class="reply-item__reply-text"><p>ООО "Бонн Интернейшенл" не один год сотрудничает с командой itp-lab (WerterService). Хотим выразить благодарность за высокий профессионализм, отличное качество и оперативность.</p>
             </div>
         </div>
     </div>
@@ -228,7 +240,7 @@ $this->title = 'Главная';
             <img class="reply-item__logo" src="https://werterservice.ru/wp-content/uploads/2017/05/reply-logo__ils.png">
             <span class="reply-item__reply-person">Главный бухгалтер Малыгина Л.Л.</span>
             <span class="reply-item__city">Международная лингвистическая школа</span>
-            <div class="reply-item__reply-text"><p>Выражает благодарность команде специалистов Werter Service за предоставленные высоком профессиональном уровне ИТ-услуги.</p>
+            <div class="reply-item__reply-text"><p>Выражает благодарность команде специалистов itp-lab (WerterService) за предоставленные высоком профессиональном уровне ИТ-услуги.</p>
             </div>
         </div>
     </div>
@@ -237,7 +249,7 @@ $this->title = 'Главная';
             <img class="reply-item__logo" src="https://werterservice.ru/wp-content/uploads/2017/05/reply-logo__bonne.png">
             <span class="reply-item__reply-person">Заместитель главного бухгалтера Кокорева А.Д.</span>
             <span class="reply-item__city">ООО "Бонн Интернейшенл"</span>
-            <div class="reply-item__reply-text"><p>ООО "Бонн Интернейшенл" не один год сотрудничает с командой WerterService. Хотим выразить благодарность за высокий профессионализм, отличное качество и оперативность.</p>
+            <div class="reply-item__reply-text"><p>ООО "Бонн Интернейшенл" не один год сотрудничает с командой itp-lab (WerterService). Хотим выразить благодарность за высокий профессионализм, отличное качество и оперативность.</p>
             </div>
         </div>
     </div>

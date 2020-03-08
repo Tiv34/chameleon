@@ -24,8 +24,8 @@ class AppAsset extends AssetBundle
 //        'css/background.css'
     ];
     public $js = [
-        'js/site.js',
         'https://code.jquery.com/jquery-2.2.0.min.js',
+        'js/all_req.js',
         'js/background_plagin/particles.js-master/src/particles.js'
     ];
     public $depends = [

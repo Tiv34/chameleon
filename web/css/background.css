@@ -48,6 +48,11 @@
     background: #9f9083;
     color: black;
 }
+#send_info_footer{
+    padding: 6px;
+    margin: 8px 0;
+    border-radius: 7px;
+}
 .show-fanny  {
     background: #f5f5f5;
     -webkit-transition: all 0.3s ease;;
@@ -63,6 +68,14 @@
     -webkit-transition-duration: 500ms;
     transition-duration: 500ms;
     margin-bottom: 36px;
+    padding-left: 94px;
+}
+.single_service_text_devops > h4 {
+    color: #2c3e50;
+    letter-spacing: 0.5px;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+    margin-bottom: 24px;
     padding-left: 94px;
 }
 .jumbotron{

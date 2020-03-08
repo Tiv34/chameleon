@@ -44,7 +44,7 @@ $this->registerCssFile('/web/css/background.css');
 
 <div class="preloader_bg"></div>
 <div class="preloader_content">
-    <img src="../../web/images/Ecxd.gif"/>
+    <img src="/web/images/Ecxd.gif"/>
 </div>
 <noscript>
     <style>
@@ -52,8 +52,6 @@ $this->registerCssFile('/web/css/background.css');
         .preloader_bg, .preloader_content { display: none !important; }
     </style>
 </noscript>
-<!-- /preloader -->
-
 <div class="wrap">
     <?php
     NavBar::begin([
@@ -92,11 +90,7 @@ $this->registerCssFile('/web/css/background.css');
     ]);
     NavBar::end();
     ?>
-<!--            --><?//= Breadcrumbs::widget([
-//                'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-//            ]) ?>
-<!--            --><?//= Alert::widget() ?>
-            <?= $content ?>
+        <?= $content ?>
 </div>
 
 <footer class="footer">
@@ -142,6 +136,7 @@ $this->registerCssFile('/web/css/background.css');
                         <i class="fa fa-envelope-square" aria-hidden="true"></i>
                         <a href="mailto:info@itp-lab.ru" class="contact_href">info@itp-lab.ru</a>
                     </div>
+                    <p><a class="btn btn-lg send_info" id="send_info_footer" href="#site-contact">Связаться c нами</a></p>
                 </div>
             </div>
             <!-- Contact info Area End -->

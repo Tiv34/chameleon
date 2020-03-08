@@ -7,6 +7,8 @@ use yii\helpers\Html;
 $this->title = 'О нас';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
+<img class="fonts_back" src="/web/images/fonts_back3.png">
+
 <div class="container container_conntent">
     <div class="site-about">
         <h1><?= Html::encode($this->title) ?></h1>
