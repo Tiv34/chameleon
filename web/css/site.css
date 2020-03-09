@@ -232,3 +232,7 @@ h1, h2, h3, h4, h5, h6 {
 .osnov_review:hover {
     box-shadow: inset 0 0 0 23px rgba(211, 195, 175, 0.72);
 }
+.site-about{
+    margin-bottom: 30px;
+    text-align: center;
+}
