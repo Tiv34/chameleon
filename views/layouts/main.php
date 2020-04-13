@@ -72,8 +72,8 @@ $this->registerCssFile('/web/css/background.css');
             ]],
             ['label' => 'ИТ Аутсорсинг', 'url' => ['/site/outsourcing']],
             ['label' => 'Торговое оборудование', 'url' => ['/site/color1']],
-            ['label' => 'Блог', 'url' => ['/site/contact']],
             ['label' => 'О нас', 'url' => ['/site/about']],
+            ['label' => 'Вход', 'url' => ['/site/login']],
 //            Yii::$app->user->isGuest ? (
 //                ['label' => 'Login', 'url' => ['/site/login']]
 //            ) : (
