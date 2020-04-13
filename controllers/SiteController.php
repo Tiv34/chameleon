@@ -61,8 +61,8 @@ class SiteController extends Controller
         $model = new ContactForm();
         if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['adminEmail'])) {
             $post = Yii::$app->request->post('ContactForm');
-            $token = "760264922:AAFXxEBPmH-7rVMMszeu46iQUNwewJSLmKw";
-            $chat_id = "-352254263";
+            $token = Yii::$app->params['telegram']['token'];
+            $chat_id = Yii::$app->params['telegram']['chat_id'];
             $arr = array(
                 "Имя: " => $post['name'],
                 "Электронный адрес: " => $post['email'],
@@ -81,7 +81,6 @@ class SiteController extends Controller
         return $this->render('index', [
             'model' => $model,
         ]);
-//        return $this->render('index');
     }
 
     /**
