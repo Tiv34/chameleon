@@ -246,3 +246,10 @@ body > div.wrap > .container_little_content {
 .form_group_my{
     align-content: center;
 }
+.navbar-ticket{
+    border-radius: 0;
+    background: #393939;
+}
+.contact_href{
+    color: #ffffff;
+}

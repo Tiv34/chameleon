@@ -26,7 +26,8 @@ class AppAsset extends AssetBundle
     public $js = [
         'https://code.jquery.com/jquery-2.2.0.min.js',
         'js/all_req.js',
-        'js/background_plagin/particles.js-master/src/particles.js'
+        'js/background_plagin/particles.js-master/src/particles.js',
+        '//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',
