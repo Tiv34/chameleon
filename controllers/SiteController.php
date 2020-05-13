@@ -113,7 +113,30 @@ class SiteController extends Controller
 
     public function actionOutsourcing()
     {
-        return $this->render('outsourcing');
+        $this->view->registerCssFile('/css/outsourcing.css');
+        $model = new ContactForm();
+        if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['adminEmail'])) {
+            $post = Yii::$app->request->post('ContactForm');
+            $token = Yii::$app->params['telegram']['token'];
+            $chat_id = Yii::$app->params['telegram']['chat_id'];
+            $arr = array(
+                "Имя: " => $post['name'],
+                "Электронный адрес: " => $post['email'],
+                "Телефон: " => $post['phone'],
+                "Сообщение: " => $post['body']
+            );
+            $txt = '';
+            foreach($arr as $key => $value) {
+                $txt .= "<b>".$key."</b> ".$value."%0A";
+            };
+            $sendToTelegram = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}&parse_mode=html&text={$txt}","r");
+            Yii::$app->session->setFlash('contactFormSubmitted');
+
+            return $this->refresh();
+        }
+        return $this->render('outsourcing', [
+            'model' => $model,
+        ]);
     }
     public function actionDevice()
     {
