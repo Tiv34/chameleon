@@ -10,6 +10,7 @@
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 use yii\captcha\Captcha;
+
 $this->title = 'Главная';
 ?>
 <script src="/web/js/slick-1.8.1/slick/slick.min.js" type="text/javascript" charset="utf-8"></script>
