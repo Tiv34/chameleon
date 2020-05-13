@@ -11,7 +11,7 @@ use yii\bootstrap\ActiveForm;
 $this->title = 'Войти в систему';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="container container_conntent container_little_content">
+<div class="container container_little_content">
     <div class="site-login">
         <h1><?= Html::encode($this->title) ?></h1>
 

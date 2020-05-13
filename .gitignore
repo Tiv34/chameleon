@@ -8,13 +8,15 @@ nbproject
 .buildpath
 .project
 .settings
+.bash_history
 
 # windows thumbnail cache
 Thumbs.db
 
 # composer vendor dir
 /vendor
-
+config
+/config
 # composer itself is not needed
 composer.phar
 
@@ -31,5 +33,3 @@ tests/_support/_generated
 
 #vagrant folder
 /.vagrant
-
-/config
