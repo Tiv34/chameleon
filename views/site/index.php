@@ -17,7 +17,11 @@ $this->title = 'Главная';
 
 <link rel="stylesheet" type="text/css" href="/web/js/slick-1.8.1/slick/slick.css">
 <link rel="stylesheet" type="text/css" href="/web/js/slick-1.8.1/slick/slick-theme.css">
-
+<style>
+    .wrap > .container {
+        padding: 0 15px 20px;!important;
+    }
+</style>
 <div class="jumbotron">
     <canvas class="background"></canvas>
     <div class="info-supre">

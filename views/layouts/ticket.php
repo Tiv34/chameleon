@@ -54,9 +54,7 @@ NavBar::end();
             <div class="sidebar-sticky">
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">
-                            Общее
-                        </a>
+                        <?= Html::a('Общее', '/ticket/admin/index'); ?>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">
@@ -84,14 +82,10 @@ NavBar::end();
                 </h6>
                 <ul class="nav flex-column mb-2">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            Добавить пользователя
-                        </a>
+                        <?= Html::a('Добавить пользователя', '/user-management/auth/registration'); ?>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            Смена пароля
-                        </a>
+                        <?= Html::a('Смена пароля', '/user-management/auth/change-own-password'); ?>
                     </li>
                     <li class="nav-item">
                         <?= Html::a('Восстановление пароля', '/user-management/auth/password-recovery'); ?>
