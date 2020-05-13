@@ -68,24 +68,12 @@ $this->registerCssFile('/web/css/background.css');
             ['label' => 'Главная', 'url' => ['/site/index']],
             ['label' => '1С Программы и сервисы', 'items' => [
                     ['label' => '1С Программы', 'url' => ['/site/service1c']],
-                    ['label' => '1С Отчётность', 'url' => ['/site/color2']],
+                    ['label' => '1С Отчётность', 'url' => ['/site/reporting']],
             ]],
             ['label' => 'ИТ Аутсорсинг', 'url' => ['/site/outsourcing']],
-            ['label' => 'Торговое оборудование', 'url' => ['/site/color1']],
+            ['label' => 'Торговое оборудование', 'url' => ['/site/device']],
             ['label' => 'О нас', 'url' => ['/site/about']],
-            ['label' => 'Вход', 'url' => ['/site/login']],
-//            Yii::$app->user->isGuest ? (
-//                ['label' => 'Login', 'url' => ['/site/login']]
-//            ) : (
-//                '<li>'
-//                . Html::beginForm(['/site/logout'], 'post')
-//                . Html::submitButton(
-//                    'Logout (' . Yii::$app->user->identity->username . ')',
-//                    ['class' => 'btn btn-link logout']
-//                )
-//                . Html::endForm()
-//                . '</li>'
-//            ),
+            ['label' => 'Вход', 'url' => ['/user-management/auth/login']],
         ],
     ]);
     NavBar::end();

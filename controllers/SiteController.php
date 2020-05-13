@@ -119,9 +119,9 @@ class SiteController extends Controller
     {
         return $this->render('color1');
     }
-    public function actionColor2()
+    public function actionReporting()
     {
-        return $this->render('color2');
+        return $this->render('reporting');
     }
     public function actionColor3()
     {
