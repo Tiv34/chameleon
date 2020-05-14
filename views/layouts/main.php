@@ -27,25 +27,25 @@ $this->registerCssFile('/web/css/background.css');
 <?php $this->beginBody() ?>
 
 <!-- preloader -->
-<style type="text/css">
-    .preloader_bg { position: fixed; background: rgb(17, 17, 17); width: 100%; height: 100%; top: 0; left: 0; z-index: 3000; }
-    .preloader_content { position: fixed; left: 50%; top: 50%; transform: translate(-50%,-50%); z-index: 3001; font-size: 14px; }
-    .preloader_content span { display: block; margin: auto; text-align: center; text-transform: uppercase; color: rgba(225,225,225,1);}
-</style>
-<script type="text/javascript">
-    $(function(){
-        $('.preloader_bg, .preloader_content').fadeIn(0);
-        $(window).on("load", function() {
-            $('.preloader_bg').delay(800).fadeOut(1000);
-            $('.preloader_content').delay(800).fadeOut(200);
-        });
-    });
-</script>
+<!--<style type="text/css">-->
+<!--    .preloader_bg { position: fixed; background: rgb(17, 17, 17); width: 100%; height: 100%; top: 0; left: 0; z-index: 3000; }-->
+<!--    .preloader_content { position: fixed; left: 50%; top: 50%; transform: translate(-50%,-50%); z-index: 3001; font-size: 14px; }-->
+<!--    .preloader_content span { display: block; margin: auto; text-align: center; text-transform: uppercase; color: rgba(225,225,225,1);}-->
+<!--</style>-->
+<!--<script type="text/javascript">-->
+<!--    $(function(){-->
+<!--        $('.preloader_bg, .preloader_content').fadeIn(0);-->
+<!--        $(window).on("load", function() {-->
+<!--            $('.preloader_bg').delay(800).fadeOut(1000);-->
+<!--            $('.preloader_content').delay(800).fadeOut(200);-->
+<!--        });-->
+<!--    });-->
+<!--</script>-->
 
-<div class="preloader_bg"></div>
-<div class="preloader_content">
-    <img src="/web/images/Ecxd.gif"/>
-</div>
+<!--<div class="preloader_bg"></div>-->
+<!--<div class="preloader_content">-->
+<!--    <img src="/web/images/Ecxd.gif"/>-->
+<!--</div>-->
 <noscript>
     <style>
         html, body { opacity: 1 !important; }
