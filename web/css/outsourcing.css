@@ -85,12 +85,13 @@ nav, footer{
  margin-left: auto;
 }
 .wrap > .container{
-    margin-right: 10%;
-    margin-left: 10%;
-    width: 90% !important;
+    margin-right: 5%;
+    margin-left: 7%;
+    width: 100% !important;
 }
 .outsourcing_row{
-    margin-top: 60px;
+    margin-top: 95px;
+    margin-bottom: 48px;
 }
 
 table {
@@ -117,6 +118,69 @@ td {
 tr:nth-child(odd) {
     background: white;
 }
-tr:nth-child(even) {
+div.text_price > table tr:nth-child(even) {
     background: #E8E6D1;
+}
+.expenses{
+    background-color: #222;
+    color: #ffffff;
+    padding: 35px 20px 20px 20px;
+    width: 100%;
+    position: relative;
+    opacity: 0.9;
+}
+.price{
+    margin: 0 15px 30px 15px;
+    width: 20%!important;
+    text-align: center;
+}
+.text_price {
+    border-top: none;
+}
+
+.box_or_left{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-bottom: 40px solid #ff9800;
+    border-left: 50px solid transparent;
+    right: 0;
+    bottom: 0;
+}
+
+.box_or_right{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 89px solid #ff9800;
+    border-right: 50px solid transparent;
+    left: 0;
+    bottom: 0;
+}
+.text_price .table {
+    margin: 0!important;
+}
+.sum-expenses{
+    border-top: 5px solid #b4b2a2;
+    padding: 35px 20px 20px 20px;
+    width: 100%;
+    position: relative;
+}
+#int_price_sum1{
+    color: #04a400;
+}
+#int_price_sum2{
+    color: #ff9800;
+}
+#int_price_sum3{
+    color: #e13c4c;
+}
+#int_price_sum4{
+    color: #a43894;
+}
+.sum-expenses-last{
+    border-top: 5px solid #b4b2a2;
+    padding: 24px 20px 20px 20px;
+    width: 100%;
+    position: relative;
 }

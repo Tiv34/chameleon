@@ -71,11 +71,7 @@ $this->params['breadcrumbs'][] = $this->title;
     </div>
 
     <div class="row outsourcing_row">
-        <!--        <div class="site-about">-->
-        <!--            <h1>Стоимость ИТ-аутсорсинга</h1>-->
-        <!--            <div class="line_perfct"></div>-->
-        <!--        </div>-->
-        <div class="col-sm-5 col-md-5 expenses">
+        <div class="col-sm-5 col-md-5">
             <table class="table">
                 <thead>
                 <tr>
@@ -111,7 +107,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 </tbody>
             </table>
         </div>
-        <div class="col-sm-5 col-md-5 expenses">
+        <div class="col-sm-5 col-md-5">
             <table class="table">
                 <thead>
                 <tr>
@@ -149,4 +145,158 @@ $this->params['breadcrumbs'][] = $this->title;
         </div>
     </div>
 
+    <div class="site-about">
+        <h1>Стоимость ИТ-аутсорсинга</h1>
+        <div class="line_perfct"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-3 col-md-3 price">
+            <div class="expenses">
+                <h4>Хит</h4>
+                <div class="box_or_left"></div>
+            </div>
+            <div class="text_price">
+                <table class="table">
+                    <tbody>
+                    <tr>
+                        <td height="50px">до 10 рабочих мест</td>
+                    </tr>
+                    <tr>
+                        <td height="50px">1-2 сервера со стандартными ролями</td>
+                    </tr>
+                    <tr>
+                        <td height="50px">1-2 МФУ или принтера</td>
+                    </tr>
+                    <tr>
+                        <td height="50px">Обслуживание ip-телефонии</td>
+                    </tr>
+                    <tr>
+                        <td height="50px">2 плановых выезда в месяц</td>
+                    </tr>
+                    <tr>
+                        <td height="50px">2 аварийных выезда в месяц</td>
+                    </tr>
+                    <tr>
+                        <td height="75px">Удаленное администрирование онлайн с 9.00 до 19.00</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="sum-expenses">
+                    <h3 id="int_price_sum1">15 000 руб</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3 col-md-3 price">
+            <div class="expenses">
+                <h4>Стандарт</h4>
+                <div class="box_or_left"></div>
+            </div>
+            <div class="text_price">
+                <table class="table">
+                    <tbody>
+                    <tr>
+                        <td height="50px">11-20 рабочих мест</td>
+                    </tr>
+                    <tr>
+                        <td height="50px">2-3 сервера со стандартными ролями</td>
+                    </tr>
+                    <tr>
+                        <td height="50px">3-5 МФУ или принтера</td>
+                    </tr>
+                    <tr>
+                        <td height="50px">Обслуживание ip-телефонии</td>
+                    </tr>
+                    <tr>
+                        <td>Обслуживание корпоративной почты</td>
+                    </tr>
+                    <tr>
+                        <td>4 плановых выезда в месяц</td>
+                    </tr>
+                    <tr>
+                        <td>2 аварийных выезда в месяц</td>
+                    </tr>
+                    <tr>
+                        <td height="64px">Удаленное администрирование онлайн с 9.00 до 19.00</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="sum-expenses">
+                    <h3 id="int_price_sum2">25 000 руб</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3 col-md-3 price">
+            <div class="expenses">
+                <h4>Бизнес</h4>
+                <div class="box_or_left"></div>
+            </div>
+            <div class="text_price">
+                <table class="table">
+                    <tbody>
+                    <tr>
+                        <td>21-40 рабочих мест</td>
+                    </tr>
+                    <tr>
+                        <td>3-5 сервера со стандартными ролями</td>
+                    </tr>
+                    <tr>
+                        <td>6-10 МФУ или принтера</td>
+                    </tr>
+                    <tr>
+                        <td>Обслуживание корпоративной почты и ip-телефонии</td>
+                    </tr>
+                    <tr>
+                        <td>Обслуживание видеонаблюдения и СКУД</td>
+                    </tr>
+                    <tr>
+                        <td>4 плановых выезда в месяц</td>
+                    </tr>
+                    <tr>
+                        <td>Неограниченное число аварийных выездов</td>
+                    </tr>
+                    <tr>
+                        <td>Удаленное администрирование онлайн с 9.00 до 19.00</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="sum-expenses">
+                    <h3 id="int_price_sum3">35 000 руб</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3 col-md-3 price">
+            <div class="expenses">
+                <h4>VIP</h4>
+                <div class="box_or_left"></div>
+            </div>
+            <div class="text_price">
+                <table class="table">
+                    <tbody>
+                    <tr>
+                        <td height="51px">Неограниченное число выездов</td>
+                    </tr>
+                    <tr>
+                        <td height="70px">Обслуживание нескольких подразделений компании</td>
+                    </tr>
+                    <tr>
+                        <td height="70px">Выделенный инженер для Вашей компании</td>
+                    </tr>
+                    <tr>
+                        <td>Выделенный менеджер для Вашей компании</td>
+                    </tr>
+                    <tr>
+                        <td>Реализация индивидуальных ИТ-проектов</td>
+                    </tr>
+                    <tr>
+                        <td height="70px">Удаленное администрирование онлайн в нерабочее время</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="sum-expenses-last">
+                    <h4 id="int_price_sum4">Рассчитывается индивидуально</h4>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
