@@ -185,3 +185,17 @@ div.text_price > table tr:nth-child(even) {
     width: 100%;
     position: relative;
 }
+#info_block_loga {
+    margin: 40px 0;
+    font-size: large;
+}
+#big_logo{
+    text-align: center;
+    padding: 53px 0 0 0;
+}
+#shtat > li {
+    padding: 10px 0;
+}
+#info_block_loga > div.col-sm-3.col-md-6 > h3 {
+    text-align: center;
+}
