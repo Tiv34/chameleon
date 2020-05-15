@@ -159,6 +159,7 @@ div.text_price > table tr:nth-child(even) {
 }
 .text_price .table {
     margin: 0!important;
+    height: 470px;
 }
 .sum-expenses{
     border-top: 5px solid #b4b2a2;
