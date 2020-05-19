@@ -61,11 +61,11 @@
     border-left: 0 solid #ff9800;
     border-radius: 24px;
 }
-.link:hover div {
-    transform: translateY(-15px);
-    border-left: 0 solid #ff9800;
-    border-right: 0 solid #ff9800;
-}
+/*.link:hover div {*/
+/*    transform: translateY(-15px);*/
+/*    border-left: 0 solid #ff9800;*/
+/*    border-right: 0 solid #ff9800;*/
+/*}*/
 .topinfo-form_text, .row, .form-group{
  border-left: none!important;
 }
