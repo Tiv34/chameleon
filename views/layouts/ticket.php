@@ -74,6 +74,7 @@ NavBar::end();
                     </li>
                 </ul>
 
+                <?php if (Yii::$app->user->isSuperadmin): ?>
                 <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
                     <span>Админ</span>
                     <a class="d-flex align-items-center text-muted" href="#">
@@ -82,12 +83,22 @@ NavBar::end();
                 </h6>
                 <ul class="nav flex-column mb-2">
                     <li class="nav-item">
-                        <?= Html::a('Добавить пользователя', '/user-management/auth/registration'); ?>
+                        <?= Html::a('Пользователи', '/user-management/user/index'); ?>
                     </li>
                     <li class="nav-item">
-                        <?= Html::a('Смена пароля', '/user-management/auth/change-own-password'); ?>
+                        <?= Html::a('Роли', '/user-management/role/index'); ?>
+                    </li>
+                    <li class="nav-item">
+                        <?= Html::a('Права', '/user-management/permission/index'); ?>
+                    </li>
+                    <li class="nav-item">
+                        <?= Html::a('Группы прав', '/user-management/auth-item-group/index'); ?>
+                    </li>
+                    <li class="nav-item">
+                        <?= Html::a('История посещений', '/user-management/user-visit-log/index'); ?>
                     </li>
                 </ul>
+                <?php endif; ?>
             </div>
         </nav>
 
@@ -96,31 +107,6 @@ NavBar::end();
         </main>
     </div>
 </div>
-
-<?php
-//echo GhostMenu::widget([
-//    'encodeLabels'=>false,
-//    'activateParents'=>true,
-//    'items' => [
-//        [
-//            'label' => 'Backend routes',
-//            'items'=>UserManagementModule::menuItems()
-//        ],
-//        [
-//            'label' => 'Frontend routes',
-//            'items'=>[
-//                ['label'=>'Вход', 'url'=>['/user-management/auth/login']],
-//                ['label'=>'Выход', 'url'=>['/user-management/auth/logout']],
-//                ['label'=>'Регистрация', 'url'=>['/user-management/auth/registration']],
-//                ['label'=>'Смена пароля', 'url'=>['/user-management/auth/change-own-password']],
-//                ['label'=>'Восстановление пароля', 'url'=>['/user-management/auth/password-recovery']],
-//                ['label'=>'Подтверждение e-mail', 'url'=>['/user-management/auth/confirm-email']],
-//            ],
-//        ],
-//    ],
-//]);
-
-?>
 
 <?php $this->endBody() ?>
 </body>

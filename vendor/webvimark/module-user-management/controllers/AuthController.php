@@ -42,7 +42,11 @@ class AuthController extends BaseController
 	{
 		if ( !Yii::$app->user->isGuest )
 		{
-            return $this->redirect(['/ticket/admin/index']);
+		    if (Yii::$app->user->isSuperadmin){
+                return $this->redirect(['/ticket/admin/index']);
+            } else {
+                return $this->redirect(['/ticket/ticket/index']);
+            }
 		}
 
 		$model = new LoginForm();
@@ -55,7 +59,11 @@ class AuthController extends BaseController
 
 		if ( $model->load(Yii::$app->request->post()) AND $model->login() )
 		{
-			return $this->redirect(['/ticket/admin/index']);
+            if (Yii::$app->user->isSuperadmin){
+                return $this->redirect(['/ticket/admin/index']);
+            } else {
+                return $this->redirect(['/ticket/ticket/index']);
+            }
 		}
 
 		return $this->renderIsAjax('login', compact('model'));
@@ -161,7 +169,7 @@ class AuthController extends BaseController
 								User::assignRole($user->id, $role);
 							}
 
-//							Yii::$app->user->login($user);
+							Yii::$app->user->login($user);
 
 							return $this->redirect(Yii::$app->user->returnUrl);
 						}
