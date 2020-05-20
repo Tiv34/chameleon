@@ -13,7 +13,6 @@ use Yii;
 
 class TicketAdminController extends Controller
 {
-
     public function behaviors()
     {
         return [
@@ -64,7 +63,6 @@ class TicketAdminController extends Controller
         $thisTicket->orderBy('date DESC')->all();
 
         $newTicket = new TicketBody();
-        var_dump($thisTicket);die;
 
         if (\Yii::$app->request->post()) {
             $newTicket->load(\Yii::$app->request->post());

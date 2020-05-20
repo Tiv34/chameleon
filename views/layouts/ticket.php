@@ -56,11 +56,11 @@ NavBar::end();
                     <li class="nav-item">
                         <?= Html::a('Общее', '/ticket/admin/index'); ?>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            Написать
-                        </a>
-                    </li>
+<!--                    <li class="nav-item">-->
+<!--                        <a class="nav-link" href="#">-->
+<!--                            Написать-->
+<!--                        </a>-->
+<!--                    </li>-->
                     <li class="nav-item">
                         <a class="nav-link" href="#">
                             История обращений
@@ -86,9 +86,6 @@ NavBar::end();
                     </li>
                     <li class="nav-item">
                         <?= Html::a('Смена пароля', '/user-management/auth/change-own-password'); ?>
-                    </li>
-                    <li class="nav-item">
-                        <?= Html::a('Восстановление пароля', '/user-management/auth/password-recovery'); ?>
                     </li>
                 </ul>
             </div>
