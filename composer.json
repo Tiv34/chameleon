@@ -20,8 +20,7 @@
         "yiisoft/yii2-swiftmailer": "~2.0.0 || ~2.1.0",
         "himiklab/yii2-recaptcha-widget": "*",
         "webvimark/module-user-management": "^1.0",
-        "ricco/yii2-ticket": "2.0.0",
-        "yiisoft/yii2-jui": "~2.0.0"
+        "ricco/yii2-ticket": "2.0.0"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.1.0",
