@@ -54,14 +54,7 @@ class TicketAdminController extends Controller
      */
     public function actionAnswer($id)
     {
-        
-
-        $thisTicket = TicketBody::find();
-        $thisTicket->where(['id_head' => $id]);
-        $thisTicket->joinWith('file');
-        $thisTicket->asArray();
-        $thisTicket->orderBy('date DESC')->all();
-
+        $thisTicket = TicketBody::find()->where(['id_head' => $id])->joinWith('file')->asArray()->orderBy('date DESC')->all();
         $newTicket = new TicketBody();
 
         if (\Yii::$app->request->post()) {

@@ -54,7 +54,12 @@ NavBar::end();
             <div class="sidebar-sticky">
                 <ul class="nav flex-column">
                     <li class="nav-item">
+                        <?php if (Yii::$app->user->isSuperadmin): ?>
                         <?= Html::a('Общее', '/ticket/admin/index'); ?>
+                        <?php else: ?>
+                        <?= Html::a('Общее', '/ticket/ticket/index'); ?>
+                        <?php endif; ?>
+
                     </li>
 <!--                    <li class="nav-item">-->
 <!--                        <a class="nav-link" href="#">-->
