@@ -23,7 +23,6 @@ class TicketController extends Controller
             ],
         ];
     }
-    public $freeAccess = true;
 
     public function init()
     {
