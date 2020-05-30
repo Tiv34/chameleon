@@ -46,7 +46,7 @@ $this->title = 'Главная';
     </div>
     <div class="row">
         <div class="col-sm-6 col-md-4">
-            <a class="no_href_style" href="outsourcing">
+            <a class="no_href_style" href="/site/outsourcing">
                 <div class="single_service show-fanny wow fadeInUp" data-wow-delay="0.2s"
                      style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
                     <div class="single_service_icon">
@@ -65,7 +65,7 @@ $this->title = 'Главная';
             </a>
         </div>
         <div class="col-sm-6 col-md-4">
-            <a class="no_href_style" href="outsourcing">
+            <a class="no_href_style" href="/site/outsourcing">
                 <div class="single_service show-fanny wow fadeInUp" data-wow-delay="0.2s"
                      style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
                     <div class="single_service_icon">
