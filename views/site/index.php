@@ -20,10 +20,12 @@ $this->title = 'Главная';
 <link rel="stylesheet" type="text/css" href="/web/js/slick-1.8.1/slick/slick-theme.css">
 <style>
     .wrap > .container {
-        padding: 0 15px 20px;!important;
+        padding: 0 15px 20px;
+    !important;
     }
 </style>
 <div class="jumbotron">
+    <img src="../images/welcome-bg.jpg" id="img-back">
     <canvas class="background"></canvas>
     <div class="info-supre">
         <h1>Управление информационными<br> технологиями</h1>
@@ -44,34 +46,38 @@ $this->title = 'Главная';
     </div>
     <div class="row">
         <div class="col-sm-6 col-md-4">
-            <div class="single_service show-fanny wow fadeInUp" data-wow-delay="0.2s"
-                 style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-                <div class="single_service_icon">
-                    <img src="/web/images/service-1-serveradm.png">
+            <a class="no_href_style" href="outsourcing">
+                <div class="single_service show-fanny wow fadeInUp" data-wow-delay="0.2s"
+                     style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                    <div class="single_service_icon">
+                        <img src="/web/images/service-1-serveradm.png">
+                    </div>
+                    <div class="single_service_text">
+                        <h4>Администрирование серверов</h4>
+                        <p>от 1800 руб</p>
+                        <p>Мониторинг серверов,
+                        <p>Поддержка и администрирование сети</p>
+                        <p>Мониторинг сети</p>
+                        <p>Резервное копирование</p>
+                        <p>Антивирусный контроль</p>
+                    </div>
                 </div>
-                <div class="single_service_text">
-                    <h4>Администрирование серверов</h4>
-                    <p>от 1800 руб</p>
-                    <p>Мониторинг серверов,
-                    <p>Поддержка и администрирование сети</p>
-                    <p>Мониторинг сети</p>
-                    <p>Резервное копирование</p>
-                    <p>Антивирусный контроль</p>
-                </div>
-            </div>
+            </a>
         </div>
         <div class="col-sm-6 col-md-4">
-            <div class="single_service show-fanny wow fadeInUp" data-wow-delay="0.2s"
-                 style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-                <div class="single_service_icon">
-                    <img src="/web/images/service-2-workplace.png">
+            <a class="no_href_style" href="outsourcing">
+                <div class="single_service show-fanny wow fadeInUp" data-wow-delay="0.2s"
+                     style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                    <div class="single_service_icon">
+                        <img src="/web/images/service-2-workplace.png">
+                    </div>
+                    <div class="single_service_text">
+                        <h4>Администрирование ПО рабочих мест</h4>
+                        <p>от 500 руб</p>
+                        <div class="service-box-text"><p>Поддержка рабочих мест и пользователей</p></div>
+                    </div>
                 </div>
-                <div class="single_service_text">
-                    <h4>Администрирование ПО рабочих мест</h4>
-                    <p>от 500 руб</p>
-                    <div class="service-box-text"><p>Поддержка рабочих мест и пользователей</p></div>
-                </div>
-            </div>
+            </a>
         </div>
         <div class="col-sm-6 col-md-4">
             <div class="single_service_devops show-fanny wow fadeInUp" data-wow-delay="0.2s"
@@ -167,7 +173,8 @@ $this->title = 'Главная';
     </div>
 
     <div class="row complecs_service">
-        <div class="col-md-12 wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+        <div class="col-md-12 wow fadeInUp" data-wow-delay="0.2s"
+             style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
             <div class="special_area_text">
                 <p>«Ваш бэк-офис — фронт-офис другой компании. Не организуйте столовую своими силами — пусть это сделает
                     подрядчик. Не печатайте материалы сами — поручите это типографии. Нужно понимать, где вы создаете
@@ -221,44 +228,54 @@ $this->title = 'Главная';
         <h1>Отзывы</h1>
         <div class="line_perfct"></div>
     </div>
-<section class="regular slider">
-    <div>
-        <div class="osnov_review">
-            <img class="reply-item__logo" src="https://werterservice.ru/wp-content/uploads/2017/05/reply-logo__bonne.png">
-            <span class="reply-item__reply-person">Заместитель главного бухгалтера Кокорева А.Д.</span>
-            <span class="reply-item__city">ООО "Бонн Интернейшенл"</span>
-            <div class="reply-item__reply-text"><p>ООО "Бонн Интернейшенл" не один год сотрудничает с командой itp-lab (WerterService). Хотим выразить благодарность за высокий профессионализм, отличное качество и оперативность.</p>
+    <section class="regular slider">
+        <div>
+            <div class="osnov_review">
+                <img class="reply-item__logo"
+                     src="https://werterservice.ru/wp-content/uploads/2017/05/reply-logo__bonne.png">
+                <span class="reply-item__reply-person">Заместитель главного бухгалтера Кокорева А.Д.</span>
+                <span class="reply-item__city">ООО "Бонн Интернейшенл"</span>
+                <div class="reply-item__reply-text"><p>ООО "Бонн Интернейшенл" не один год сотрудничает с командой
+                        itp-lab (WerterService). Хотим выразить благодарность за высокий профессионализм, отличное
+                        качество и оперативность.</p>
+                </div>
             </div>
         </div>
-    </div>
-    <div>
-        <div class="osnov_review">
-            <img class="reply-item__logo" src="https://werterservice.ru/wp-content/uploads/2017/05/logo_since.jpg">
-            <span class="reply-item__reply-person">Главный бухгалтер Сушко А.В.</span>
-            <span class="reply-item__city">Центр развития ребёнка</span>
-            <div class="reply-item__reply-text"><p>Профессионализм и высокое качество работы сотрудников компании заслуживает самой высокой оценки. Благодарим за профессиональный подход и внимание ко всем нашим требованиям! </p>
+        <div>
+            <div class="osnov_review">
+                <img class="reply-item__logo" src="https://werterservice.ru/wp-content/uploads/2017/05/logo_since.jpg">
+                <span class="reply-item__reply-person">Главный бухгалтер Сушко А.В.</span>
+                <span class="reply-item__city">Центр развития ребёнка</span>
+                <div class="reply-item__reply-text"><p>Профессионализм и высокое качество работы сотрудников компании
+                        заслуживает самой высокой оценки. Благодарим за профессиональный подход и внимание ко всем нашим
+                        требованиям! </p>
+                </div>
             </div>
         </div>
-    </div>
-    <div>
-        <div class="osnov_review">
-            <img class="reply-item__logo" src="https://werterservice.ru/wp-content/uploads/2017/05/reply-logo__ils.png">
-            <span class="reply-item__reply-person">Главный бухгалтер Малыгина Л.Л.</span>
-            <span class="reply-item__city">Международная лингвистическая школа</span>
-            <div class="reply-item__reply-text"><p>Выражает благодарность команде специалистов itp-lab (WerterService) за предоставленные высоком профессиональном уровне ИТ-услуги.</p>
+        <div>
+            <div class="osnov_review">
+                <img class="reply-item__logo"
+                     src="https://werterservice.ru/wp-content/uploads/2017/05/reply-logo__ils.png">
+                <span class="reply-item__reply-person">Главный бухгалтер Малыгина Л.Л.</span>
+                <span class="reply-item__city">Международная лингвистическая школа</span>
+                <div class="reply-item__reply-text"><p>Выражает благодарность команде специалистов itp-lab
+                        (WerterService) за предоставленные высоком профессиональном уровне ИТ-услуги.</p>
+                </div>
             </div>
         </div>
-    </div>
-    <div>
-        <div class="osnov_review">
-            <img class="reply-item__logo" src="https://werterservice.ru/wp-content/uploads/2017/05/reply-logo__bonne.png">
-            <span class="reply-item__reply-person">Заместитель главного бухгалтера Кокорева А.Д.</span>
-            <span class="reply-item__city">ООО "Бонн Интернейшенл"</span>
-            <div class="reply-item__reply-text"><p>ООО "Бонн Интернейшенл" не один год сотрудничает с командой itp-lab (WerterService). Хотим выразить благодарность за высокий профессионализм, отличное качество и оперативность.</p>
+        <div>
+            <div class="osnov_review">
+                <img class="reply-item__logo"
+                     src="https://werterservice.ru/wp-content/uploads/2017/05/reply-logo__bonne.png">
+                <span class="reply-item__reply-person">Заместитель главного бухгалтера Кокорева А.Д.</span>
+                <span class="reply-item__city">ООО "Бонн Интернейшенл"</span>
+                <div class="reply-item__reply-text"><p>ООО "Бонн Интернейшенл" не один год сотрудничает с командой
+                        itp-lab (WerterService). Хотим выразить благодарность за высокий профессионализм, отличное
+                        качество и оперативность.</p>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 </div>
 
 <div class="container">
