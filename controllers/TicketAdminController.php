@@ -6,6 +6,8 @@ use ricco\ticket\Mailer;
 use ricco\ticket\models\TicketBody;
 use ricco\ticket\models\TicketHead;
 use ricco\ticket\models\User;
+use yii\base\InvalidConfigException;
+use yii\db\Exception;
 use yii\helpers\Url;
 use yii\web\Controller;
 use ricco\ticket\Module;
@@ -22,10 +24,18 @@ class TicketAdminController extends Controller
         ];
     }
 
+    /**
+     * @throws InvalidConfigException
+     */
     public function init()
     {
         parent::init();
         $this->layout = '@app/views/layouts/ticket';
+        try {
+            $this->view->registerCssFile('/css/ticket.css');
+        } catch (InvalidConfigException $e) {
+            throw new InvalidConfigException($e->getMessage());
+        }
     }
 
     /**
