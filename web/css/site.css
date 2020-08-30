@@ -89,18 +89,6 @@ a.desc:after {
     border: none;
 }
 
-@media(max-width:767px) {
-    .nav li > form > button.logout {
-        display:block;
-        text-align: left;
-        width: 100%;
-        padding: 10px 15px;
-    }
-    .block_padding_on{
-        padding-right:0;
-    }
-}
-
 .nav > li > form > button.logout:focus,
 .nav > li > form > button.logout:hover {
     text-decoration: none;
@@ -252,4 +240,16 @@ body > div.wrap > .container_little_content {
 }
 .contact_href{
     color: #ffffff;
+}
+
+@media(max-width:767px) {
+    .nav li > form > button.logout {
+        display:block;
+        text-align: left;
+        width: 100%;
+        padding: 10px 15px;
+    }
+    .block_padding_on{
+        padding-right:0;
+    }
 }
