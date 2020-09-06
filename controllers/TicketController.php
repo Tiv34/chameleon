@@ -41,6 +41,8 @@ class TicketController extends Controller
      */
     public function actionView($id)
     {
+        $this->view->registerCssFile('/css/ticket/chat.css');
+
         $ticket = TicketHead::findOne([
             'id'      => $id,
             'user_id' => \Yii::$app->user->id,
@@ -50,7 +52,7 @@ class TicketController extends Controller
             $ticket->save();
         }
 
-        $thisTicket = TicketBody::find()->where(['id_head' => $id])->joinWith('file')->orderBy('date DESC')->all();
+        $thisTicket = TicketBody::find()->where(['id_head' => $id])->joinWith('file')->orderBy('date asc')->all();
 
         if (!$ticket || !$thisTicket) {
             return $this->actionIndex();
@@ -88,7 +90,7 @@ class TicketController extends Controller
             $this->redirect(Url::to());
         }
 
-        return $this->render('view', [
+        return $this->render('@app/views/ticket/client/view', [
             'thisTicket' => $thisTicket,
             'newTicket'  => $newTicket,
             'fileTicket' => $ticketFile,
@@ -120,9 +122,11 @@ class TicketController extends Controller
      */
     public function actionOpen()
     {
+
         $ticketHead = new TicketHead();
         $ticketBody = new TicketBody();
         $ticketFile = new TicketFile();
+
 
         if (\Yii::$app->request->post()) {
             $ticketHead->load(\Yii::$app->request->post());

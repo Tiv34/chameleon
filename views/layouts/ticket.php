@@ -15,6 +15,9 @@ use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;
 
 AppAsset::register($this);
+$this->registerCssFile('@web/css/ticket/ticket.css');
+
+
 ?>
 
 <?php $this->beginPage() ?>
@@ -105,7 +108,7 @@ AppAsset::register($this);
                 </div>
             </nav>
 
-            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+            <main role="main" class="main-ticket">
                 <?= $content ?>
             </main>
         </div>

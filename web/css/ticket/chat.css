@@ -1,0 +1,47 @@
+.massages {
+    height:auto;
+    margin-bottom: 50px;
+    padding: 10px;
+    position: relative;
+}
+.row_massages{
+    margin-bottom: 10px;
+}
+.client_block{
+    padding: 25px;
+    background: #178a00;
+    color: #fff;
+    border-radius: 10px 0 10px 10px;
+}
+.sotrud_block {
+    padding: 25px;
+    background: #f3f3f3;
+    border-radius: 10px 0 10px 10px;
+}
+.full-chat {
+    padding: 30px;
+    height: 637px;
+    overflow-y: scroll;
+}
+.chat-block {
+    /*padding: 0 30px;*/
+}
+.clv-message_block_text_n {
+    margin-top: 5px;
+    color: #999;
+    word-wrap: break-word;
+    min-height: 18px;
+    font-size: 12px;
+    line-height: 14px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.sotrud-massages{
+    float: left;
+    max-width: 70%;
+}
+.client-massages {
+    float: right;
+    max-width: 70%;
+}

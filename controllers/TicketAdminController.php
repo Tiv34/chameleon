@@ -31,11 +31,6 @@ class TicketAdminController extends Controller
     {
         parent::init();
         $this->layout = '@app/views/layouts/ticket';
-        try {
-            $this->view->registerCssFile('/css/ticket.css');
-        } catch (InvalidConfigException $e) {
-            throw new InvalidConfigException($e->getMessage());
-        }
     }
 
     /**
@@ -49,8 +44,7 @@ class TicketAdminController extends Controller
     {
         $dataPrivider = (new TicketHead())->dataProviderAdmin();
         Url::remember();
-
-        return $this->render('index', ['dataProvider' => $dataPrivider]);
+        return $this->render('@app/views/ticket/admin/index', ['dataProvider' => $dataPrivider]);
     }
 
     /**
@@ -61,11 +55,15 @@ class TicketAdminController extends Controller
      *
      * @param $id int
      * @return string|\yii\web\Response
+     * @throws InvalidConfigException
      */
     public function actionAnswer($id)
     {
-        $thisTicket = TicketBody::find()->where(['id_head' => $id])->joinWith('file')->asArray()->orderBy('date DESC')->all();
+        $this->view->registerCssFile('/css/ticket/chat.css');
+
+        $thisTicket = TicketBody::find()->where(['id_head' => $id])->joinWith('file')->asArray()->orderBy('date asc')->all();
         $newTicket = new TicketBody();
+
 
         if (\Yii::$app->request->post()) {
             $newTicket->load(\Yii::$app->request->post());
@@ -81,7 +79,7 @@ class TicketAdminController extends Controller
             }
         }
 
-        return $this->render('answer', ['thisTicket' => $thisTicket, 'newTicket' => $newTicket]);
+        return $this->render('@app/views/ticket/admin/answer', ['thisTicket' => $thisTicket, 'newTicket' => $newTicket]);
     }
 
     /**
