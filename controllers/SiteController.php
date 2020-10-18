@@ -122,6 +122,8 @@ class SiteController extends Controller
     }
     public function actionReporting()
     {
+        $this->view->registerCssFile('/css/reporting.css');
+
         return $this->render('reporting');
     }
 }

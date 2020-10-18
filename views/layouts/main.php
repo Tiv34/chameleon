@@ -46,10 +46,12 @@ $this->registerCssFile('/web/css/background.css');
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
             ['label' => 'Главная', 'url' => ['/site/index']],
-            ['label' => '1С Программы и сервисы', 'items' => [
-                    ['label' => '1С Программы', 'url' => ['/site/service1c']],
-                    ['label' => '1С Отчётность', 'url' => ['/site/reporting']],
-            ]],
+            ['label' => '1С Программы и сервисы',  'url' => ['/site/reporting']
+//                'items' => [
+//                    ['label' => '1С Программы', 'url' => ['/site/service1c']],
+//                    ['label' => '1С Отчётность', 'url' => ['/site/reporting']],
+//            ]
+            ],
             ['label' => 'ИТ Аутсорсинг', 'url' => ['/site/outsourcing']],
             ['label' => 'Торговое оборудование', 'url' => ['/site/device']],
             ['label' => 'О нас', 'url' => ['/site/about']],

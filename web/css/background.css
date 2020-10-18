@@ -95,7 +95,7 @@
 .navbar {
     min-height: 61px;
     border-color: #080808;
-    opacity: 0.9;
+    /*opacity: 0.9;*/
 }
 .hint-block {
     display: block;
