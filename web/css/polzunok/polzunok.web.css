@@ -125,7 +125,7 @@ h4.great {
 .form-pricing {
     background: #f5f5f5;
     padding: 32px;
-    border-radius: 24px;
+    border-radius: 0 0 24px 24px;
     top: -60px;
     position: relative;
     height: 1010px;

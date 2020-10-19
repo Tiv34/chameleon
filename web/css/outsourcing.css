@@ -223,7 +223,7 @@ div.text_price > table tr:nth-child(even) {
         margin-left: 0;
     }
     .link-inner {
-        margin: 0 8%;
+        margin: 0;
     }
     .price {
         width: 100%!important;

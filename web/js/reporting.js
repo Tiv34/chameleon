@@ -18,6 +18,8 @@ $(document).ready(function() {
 
     $(".type-reporting").click(function() {
         $(".price-box").hide();
+        $(".type-reporting").addClass('noactive');
+        $(this).removeClass('noactive');
         var clickId = $(this).attr('id');
         $("#"+clickId+"-box").show();
     });

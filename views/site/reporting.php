@@ -19,14 +19,14 @@ $this->params['breadcrumbs'][] = $this->title;
         </p>
     </div>
     <div class="submit_okopf">
-        <button type="submit" id="ip" class="btn btn-lg send_info type-reporting">Индивидуальным предпринимателям</button>
-        <button type="submit" id="ul" class="btn btn-lg send_info type-reporting">Юридическим лицам</button>
-        <button type="submit" id="ub" class="btn btn-lg send_info type-reporting">Уполномоченным бухгалтериям</button>
+        <button type="submit" id="ip" class="btn btn-lg type-reporting">Индивидуальным предпринимателям</button>
+        <button type="submit" id="ul" class="btn btn-lg type-reporting noactive">Юридическим лицам</button>
+        <button type="submit" id="ub" class="btn btn-lg type-reporting noactive">Уполномоченным бухгалтериям</button>
     </div>
 
 
     <div class="price-box" id="ip-box">
-        <form class="form-horizontal form-pricing" role="form">
+        <form class="form-horizontal form-pricing ul-block" role="form">
             <div class="price-slider">
                 <h4 class="great">Индивидуальным предпринимателям</h4>
                 <span>Стоимость лицензии</span>
